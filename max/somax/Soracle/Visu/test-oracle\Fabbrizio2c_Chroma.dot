@@ -1,0 +1,484 @@
+ digraph test-oracle\Fabbrizio2c_Chroma 
+{
+  graph [rankdir=LR];
+  node [shape=circle];
+  nodesep = 0.2;
+  forcelabels = true;
+   {
+     0 [id = -1, xlabel = -1]
+   }
+{
+    1 [id = 23, xlabel = 0]
+
+    1 -> 0 [label = 0,constraint = false, style = dotted]
+}
+
+{
+    2 [id = 2159, xlabel = 1]
+
+    2 -> 0 [label = 0,constraint = false, style = dotted]
+}
+
+{
+    3 [id = 2961, xlabel = 1]
+
+    3 -> 2 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    4 [id = 3564, xlabel = 2]
+
+    4 -> 0 [label = 0,constraint = false, style = dotted]
+}
+
+{
+    5 [id = 4714, xlabel = 1]
+
+    5 -> 2 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    6 [id = 5166, xlabel = 2]
+
+    6 -> 4 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    7 [id = 5991, xlabel = 1]
+
+    7 -> 5 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    8 [id = 6618, xlabel = 2]
+
+    8 -> 6 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    9 [id = 8440, xlabel = 1]
+
+    9 -> 7 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    10 [id = 9392, xlabel = 2]
+
+    10 -> 8 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    11 [id = 10472, xlabel = 1]
+
+    11 -> 9 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    12 [id = 11331, xlabel = 2]
+
+    12 -> 10 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    13 [id = 12759, xlabel = 1]
+
+    13 -> 11 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    14 [id = 13398, xlabel = 2]
+
+    14 -> 12 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    15 [id = 14396, xlabel = 0]
+
+    15 -> 1 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    16 [id = 15256, xlabel = 1]
+
+    16 -> 2 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    17 [id = 16289, xlabel = 3]
+
+    17 -> 0 [label = 0,constraint = false, style = dotted]
+}
+
+{
+    18 [id = 16788, xlabel = 2]
+
+    18 -> 4 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    19 [id = 17554, xlabel = 0]
+
+    19 -> 15 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    20 [id = 18982, xlabel = 0]
+
+    20 -> 1 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    21 [id = 19888, xlabel = 1]
+
+    21 -> 2 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    22 [id = 20643, xlabel = 1]
+
+    22 -> 3 [label = 2,constraint = false, style = dotted]
+}
+
+{
+    23 [id = 21478, xlabel = 1]
+
+    23 -> 3 [label = 2,constraint = false, style = dotted]
+}
+
+{
+    24 [id = 22442, xlabel = 2]
+
+    24 -> 4 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    25 [id = 23835, xlabel = 1]
+
+    25 -> 5 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    26 [id = 25043, xlabel = 2]
+
+    26 -> 6 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    27 [id = 26389, xlabel = 1]
+
+    27 -> 7 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    28 [id = 26993, xlabel = 2]
+
+    28 -> 8 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    29 [id = 27527, xlabel = 1]
+
+    29 -> 9 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    30 [id = 28235, xlabel = 2]
+
+    30 -> 10 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    31 [id = 28886, xlabel = 1]
+
+    31 -> 11 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    32 [id = 29571, xlabel = 2]
+
+    32 -> 12 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    33 [id = 30244, xlabel = 1]
+
+    33 -> 13 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    34 [id = 31417, xlabel = 0]
+
+    34 -> 1 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    35 [id = 32891, xlabel = 4]
+
+    35 -> 0 [label = 0,constraint = false, style = dotted]
+}
+
+{
+    36 [id = 33460, xlabel = 2]
+
+    36 -> 4 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    37 [id = 33913, xlabel = 1]
+
+    37 -> 5 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    38 [id = 35898, xlabel = 1]
+
+    38 -> 3 [label = 2,constraint = false, style = dotted]
+}
+
+{
+    39 [id = 36420, xlabel = 1]
+
+    39 -> 23 [label = 3,constraint = false, style = dotted]
+}
+
+{
+    40 [id = 36873, xlabel = 1]
+
+    40 -> 23 [label = 3,constraint = false, style = dotted]
+}
+
+{
+    41 [id = 37477, xlabel = 1]
+
+    41 -> 40 [label = 4,constraint = false, style = dotted]
+}
+
+{
+    42 [id = 38592, xlabel = 1]
+
+    42 -> 41 [label = 5,constraint = false, style = dotted]
+}
+
+{
+    43 [id = 39555, xlabel = 1]
+
+    43 -> 42 [label = 6,constraint = false, style = dotted]
+}
+
+{
+    44 [id = 40136, xlabel = 1]
+
+    44 -> 43 [label = 7,constraint = false, style = dotted]
+}
+
+{
+    45 [id = 40716, xlabel = 4]
+
+    45 -> 35 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    46 [id = 41285, xlabel = 2]
+
+    46 -> 36 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    47 [id = 41912, xlabel = 1]
+
+    47 -> 37 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    48 [id = 42852, xlabel = 1]
+
+    48 -> 38 [label = 2,constraint = false, style = dotted]
+}
+
+{
+    49 [id = 43526, xlabel = 3]
+
+    49 -> 17 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    50 [id = 45000, xlabel = 2]
+
+    50 -> 18 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    51 [id = 46045, xlabel = 0]
+
+    51 -> 19 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    52 [id = 46858, xlabel = 1]
+
+    52 -> 16 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    53 [id = 48042, xlabel = 4]
+
+    53 -> 45 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    54 [id = 48820, xlabel = 2]
+
+    54 -> 46 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    55 [id = 49551, xlabel = 1]
+
+    55 -> 47 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    56 [id = 50573, xlabel = 1]
+
+    56 -> 48 [label = 2,constraint = false, style = dotted]
+}
+
+{
+    57 [id = 50991, xlabel = 1]
+
+    57 -> 39 [label = 3,constraint = false, style = dotted]
+}
+
+{
+    58 [id = 51479, xlabel = 1]
+
+    58 -> 40 [label = 4,constraint = false, style = dotted]
+}
+
+{
+    59 [id = 52233, xlabel = 1]
+
+    59 -> 41 [label = 5,constraint = false, style = dotted]
+}
+
+{
+    60 [id = 53139, xlabel = 2]
+
+    60 -> 24 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    61 [id = 54219, xlabel = 2]
+
+    61 -> 4 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    62 [id = 55275, xlabel = 1]
+
+    62 -> 5 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    63 [id = 56448, xlabel = 2]
+
+    63 -> 6 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    64 [id = 57911, xlabel = 1]
+
+    64 -> 7 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    65 [id = 58398, xlabel = 2]
+
+    65 -> 8 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    66 [id = 58955, xlabel = 1]
+
+    66 -> 9 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    67 [id = 59652, xlabel = 2]
+
+    67 -> 10 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    68 [id = 60186, xlabel = 1]
+
+    68 -> 11 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    69 [id = 60627, xlabel = 2]
+
+    69 -> 12 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    70 [id = 61057, xlabel = 1]
+
+    70 -> 13 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    71 [id = 61695, xlabel = 2]
+
+    71 -> 14 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    72 [id = 62589, xlabel = 1]
+
+    72 -> 13 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    73 [id = 63274, xlabel = 2]
+
+    73 -> 14 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    74 [id = 64041, xlabel = 1]
+
+    74 -> 72 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    75 [id = 64563, xlabel = 2]
+
+    75 -> 73 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    76 [id = 65387, xlabel = 1]
+
+    76 -> 74 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    77 [id = 65887, xlabel = 2]
+
+    77 -> 75 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    78 [id = 66467, xlabel = 1]
+
+    78 -> 76 [label = 1,constraint = false, style = dotted]
+}
+
+{
+    79 [id = 67825, xlabel = 0]
+
+    79 -> 34 [label = 1,constraint = false, style = dotted]
+}
+
+}

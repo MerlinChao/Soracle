@@ -1,0 +1,51 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11905\paperh16837\margl1440\margr1440\vieww12220\viewh17140\viewkind1
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 README\
+\
+Cela n\'92est pas hyper propre, mais \'e7a marche.\
+Le principe est de montrer jusqu\'92\'e0 4 oracles (on peut en fait en rajouter autant qu\'92on veut) construits sur un m\'eame fichier son.\
+Il faut : \
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}Les oracles dans la bonne forme dans un dossier (Ici le dossier
+\f1\i Oracles
+\f0\i0 )\
+\ls1\ilvl0{\listtext	\uc0\u8226 	}La longueur des cha\'eenes sur lesquelles ces oracles sont construits (tous les \'e9tats). SI on a une segmentation fixe, cette longueur est constante. Dans l\'92exemple, elle varie suivant le descripteur, mais reste la m\'eame pour les descripteurs syllabiques (on a pitch, MFCC12, MFCC24, syllabe3, syllabe4, syllabe3slope).\
+{\listtext	\uc0\u8226 	}La longueur du fichier son (en millisecondes)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+Mode d\'92emploi:\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 1- Avoir Le dossier VISU_STandalone dans ses pr\'e9f\'e9rences (avec sous-dossiers)\
+2- Ouvrir OMax.VisuWindow (celui avec le point rouge)\
+3- Charger le dossier 
+\f1\i Oracles
+\f0\i0 \
+4- Remplir la collection [Stda_Oracles_data_size] dans l\'92ordre de Oracles (les num\'e9ros doivent correspondre\'85) \
+5- Ensuite Enable Vizu. Si la repr\'e9sentation est d\'e9plac\'e9e vers la droite, 
+\f1\i cliquer sur la dur\'e9e du fichier
+\f0\i0 . Normalement elle se met en place.\
+\
+Exemple :\
+On a dans le dossier Oracle 6 oracles construits sur un fichier de saxophone de 385620 millisecondes (Soit 6 minutes et 25,62 secondes)\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls2\ilvl0\cf0 {\listtext	\uc0\u8226 	}Un oracle Pitch sur une segmentation de 1329 points\
+{\listtext	\uc0\u8226 	}Un oracle MFCC 12 bandes sur une segmentation de 15871 points (assez similaire \'e0 celle de Shlomo)\
+\pard\tx220\tx720\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0\cf0 {\listtext	\uc0\u8226 	}Un oracle MFCC 24 bandes sur une segmentation de 15871 points (assez similaire \'e0 celle de Shlomo)\
+{\listtext	\uc0\u8226 	}Trois oracles syllabiques sur une unique segmentation de 1229 points.\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 On peut charger le dossier \'ab\'a0Oracles\'a0\'bb. Les valeurs par d\'e9faut pour la dur\'e9e du fichier et la collection data-size sont les bond. On affiche ainsi les oracles.\
+\
+\
+On peut afficher un pointeur de la position dans le fichier son (envoy\'e9 par Somax).\
+La date (en ms) est en rouge en bas de la fen\'eatre. Il se remet \'e0 jour au maximum 10fois par seconde.\
+}
