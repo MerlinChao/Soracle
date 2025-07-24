@@ -117,17 +117,19 @@ class  VMOManager(Parametric):
     
     # the normalization is maybe not  necessary
     # apparently i removed it
+    # no actually it's important
     def normalize_and_weight(self, candidates: List[Candidate],feature) -> List[Candidate]:
         scores = np.array([candidate.lrs for candidate in candidates])
         if len(scores) > 0:
-            '''
             min_score = np.min(scores)
             max_score = np.max(scores)
-            normalized_scores = (scores - min_score) / (max_score - min_score) if max_score > min_score else scores
-            '''
+            if max_score > min_score:
+                normalized_scores = (scores - min_score) / (max_score - min_score)
+            else:
+                normalized_scores = scores
 
             weight = self.weights.value[self.features_used.value.index(feature)] if self.features_used.value.index(feature) < len(self.weights.value) else 0
-            weighted_scores = scores * weight
+            weighted_scores = normalized_scores * weight
 
         else:
             return []

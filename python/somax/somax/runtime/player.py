@@ -117,12 +117,10 @@ class Player(Parametric, ContentAware):
             peaks, taboo_mask = self._scale_peaks(peaks, scheduler_time, beat_phase,
                                                   self.corpus, taboo_mask, enforce_output)
 
-            #FO 
-            #print(f"self.vmo_player_enabled: {self.vmo_player_enabled}")
+   
             if self.vmo_player_enabled.value and self.vmo_player is not None:
                 event, transform, is_vmo_match = self.vmo_player.new_event()
                 event_and_transform = event, transform
-                #self.vmo_check() # just to check some stuff, should be removed later
             else:
                 event_and_transform: Optional[Tuple[CorpusEvent, AbstractTransform]]
                 event_and_transform = self.peak_selector.decide(peaks, self.corpus, self._transform_handler)
