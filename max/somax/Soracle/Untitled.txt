@@ -1,0 +1,37 @@
+{
+	"weights" : 	{
+		"title" : "Layer Memory Length",
+		"description" : "Internal Weights:\n\n These layers help balance the factor oracle. Two factor oracles, one based on pitch and the other on chroma, run simultaneously and generate event candidates scored using the suffix length (LRS). This scoring system prioritizes outputs that maintain coherence with the selected feature. The candidates are then weighted using internal weights. If a candidate is proposed by both oracles, their respective weights are combined. The output is then chosen by applying a probability distribution to the candidates.\n\nExternal Weights:\n\nOnce candidates are generated, they can be further filtered based on influence, if enabled. This mechanism prioritizes outputs that match with specific features of the influence."
+	}
+,
+	"lrs" : 	{
+		"title" : "LRS minimum",
+		"description" : "Event candidates must meet a minimum required the suffix length (LRS). to be selected as output. This thresholds ensures that only candidates with sufficient coherence are considered."
+	}
+,
+	"cont" : 	{
+		"title" : "Continuity",
+		"description" : "Each time the Oracle jumps to a new index in the corpus, it continues linearly for a number of events set by the continuity parameter. After this, it jumps to a new index to introduce variation."
+	}
+,
+	"WinS" : 	{
+		"title" : "Editing Window",
+		"description" : "To create more interesting editing points, we define an editing window around the continuity point. Events within this window are used to find jump candidates, with the goal of improving the overall quality of the editing points"
+	}
+,
+	"Temperature" : 	{
+		"title" : "Temperature",
+		"description" : "The temperature controls the softmax distribution used to select an output from the event candidates. A lower temperature favors higher LRS values, making them more likely to be chosen. A higher temperature results in a more uniform distribution. This can be used to avoid loops or to increase the overall value of LRS"
+	}
+,
+	"Taboo" : 	{
+		"title" : "Taboo",
+		"description" : "The taboo serves the same purpose as in Somax. Since the oracle can sometimes generate more loops, this functionality can be even more useful and necessary in Soracle."
+	}
+,
+	"Matches" : 	{
+		"title" : "Matches",
+		"description" : "Displays upcoming jumps. External matches are always fewer in number than internal matches, as they are filtered by influence. The total number of matches (for now) corresponds to the sum of the two types combined, which means that the same match can be counted multiple times. This value is therefore not entirely reliable."
+	}
+
+}

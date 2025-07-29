@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 757.0, 95.0, 641.0, 764.0 ],
+		"rect" : [ 321.0, 102.0, 731.0, 764.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -190,7 +190,7 @@
 						"valueof" : 						{
 							"parameter_enum" : [ "-- click to refresh --", "-- click to refresh --", "-- click to refresh --" ],
 							"parameter_invisible" : 1,
-							"parameter_longname" : "corpusname[1]",
+							"parameter_longname" : "corpusname_2",
 							"parameter_mmax" : 2,
 							"parameter_modmode" : 0,
 							"parameter_shortname" : "corpusname",
@@ -201,7 +201,7 @@
 ,
 					"textcolor" : [ 1.0, 0.709803921568627, 0.196078431372549, 1.0 ],
 					"textjustification" : 1,
-					"varname" : "corpusname[1]"
+					"varname" : "corpusname_2"
 				}
 
 			}
@@ -2670,7 +2670,7 @@
  ],
 		"parameters" : 		{
 			"obj-26" : [ "corpusname[4]", "corpusname", 0 ],
-			"obj-38" : [ "corpusname[1]", "corpusname", 0 ],
+			"obj-38" : [ "corpusname_2", "corpusname", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -2685,21 +2685,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "abstraction_path.js",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/javascript",
+				"bootpath" : "~/Documents/Soracle/max/somax/javascript",
 				"patcherrelativepath" : "../javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.corpuspath.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "../patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.path.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "../patchers",
 				"type" : "JSON",
 				"implicit" : 1

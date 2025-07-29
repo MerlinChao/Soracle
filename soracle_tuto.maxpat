@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 210.0, 87.0, 1159.0, 779.0 ],
+		"rect" : [ 31.0, 87.0, 1217.0, 779.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1159.0, 753.0 ],
+						"rect" : [ 0.0, 26.0, 1217.0, 753.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -87,6 +87,19 @@
 						"showontab" : 2,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-81",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 809.0, 273.0, 130.0, 51.0 ],
+									"text" : "click here to switch from somax to oracle"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
@@ -202,7 +215,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1159.0, 753.0 ],
+						"rect" : [ 0.0, 26.0, 1217.0, 753.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -726,7 +739,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1159.0, 753.0 ],
+						"rect" : [ 31.0, 113.0, 1217.0, 753.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -757,6 +770,230 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-13",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 222.0, 40.0, 150.0, 60.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 4,
+									"presentation_rect" : [ 222.0, 40.0, 150.0, 60.0 ],
+									"text" : "This is the instructions for multi-segmented oracle. for more info, check the documentation"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.694117647058824, 0.513725490196078, 1.0 ],
+									"fontface" : 1,
+									"fontsize" : 8.0,
+									"hint" : "",
+									"id" : "obj-10",
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"outputmode" : 0,
+									"parameter_enable" : 0,
+									"patching_rect" : [ 584.0, 218.5, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 585.0, 220.0, 17.0, 18.0 ],
+									"rounded" : 60.0,
+									"text" : "5",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textoncolor" : [ 0.780610322952271, 0.870786786079407, 0.912208139896393, 1.0 ],
+									"varname" : "soracle_docu[4]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.694117647058824, 0.513725490196078, 1.0 ],
+									"fontface" : 1,
+									"fontsize" : 8.0,
+									"hint" : "",
+									"id" : "obj-9",
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"outputmode" : 0,
+									"parameter_enable" : 0,
+									"patching_rect" : [ 555.0, 177.0, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 562.0, 169.5, 17.0, 18.0 ],
+									"rounded" : 60.0,
+									"text" : "4",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textoncolor" : [ 0.780610322952271, 0.870786786079407, 0.912208139896393, 1.0 ],
+									"varname" : "soracle_docu[3]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.694117647058824, 0.513725490196078, 1.0 ],
+									"fontface" : 1,
+									"fontsize" : 8.0,
+									"hint" : "",
+									"id" : "obj-8",
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"outputmode" : 0,
+									"parameter_enable" : 0,
+									"patching_rect" : [ 1064.0, 224.0, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 1190.0, 268.5, 17.0, 18.0 ],
+									"rounded" : 60.0,
+									"text" : "3",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textoncolor" : [ 0.780610322952271, 0.870786786079407, 0.912208139896393, 1.0 ],
+									"varname" : "soracle_docu[2]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-7",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 419.0, 203.0, 156.0, 51.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 419.0, 199.0, 156.0, 51.0 ],
+									"text" : "go into soracle settings. click on Load Multi- Seg and select your folder"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-6",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 419.0, 160.0, 120.0, 37.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 2,
+									"presentation_rect" : [ 419.0, 160.0, 120.0, 37.0 ],
+									"text" : "activate the oracle"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"id" : "obj-81",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1052.0, 252.0, 130.0, 51.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 1052.0, 252.0, 130.0, 51.0 ],
+									"text" : "The 2 corpus have to be in the same folder"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 3,
+									"fontface" : 0,
+									"fontsize" : 12.0,
+									"id" : "obj-33",
+									"linecount" : 4,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 650.0, 356.0, 123.0, 64.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 4,
+									"presentation_rect" : [ 650.0, 356.0, 123.0, 64.0 ],
+									"text" : "create 2 corpus for Pitch and Chroma named Pitch and Chroma"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.694117647058824, 0.513725490196078, 1.0 ],
+									"fontface" : 1,
+									"fontsize" : 8.0,
+									"hint" : "",
+									"id" : "obj-110",
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"outputmode" : 0,
+									"parameter_enable" : 0,
+									"patching_rect" : [ 611.0, 371.5, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 627.0, 374.0, 17.0, 18.0 ],
+									"rounded" : 60.0,
+									"text" : "2",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textoncolor" : [ 0.780610322952271, 0.870786786079407, 0.912208139896393, 1.0 ],
+									"varname" : "soracle_docu[1]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bubble" : 1,
+									"bubbleside" : 2,
+									"fontsize" : 14.0,
+									"id" : "obj-64",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 750.0, 72.0, 100.0, 57.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 734.0, 99.0, 143.0, 41.0 ],
+									"text" : "select a sound file"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 1.0, 0.694117647058824, 0.513725490196078, 1.0 ],
+									"fontface" : 1,
+									"fontsize" : 8.0,
+									"hint" : "",
+									"id" : "obj-113",
+									"legacytextcolor" : 1,
+									"maxclass" : "textbutton",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "int" ],
+									"outputmode" : 0,
+									"parameter_enable" : 0,
+									"patching_rect" : [ 722.0, 78.0, 20.0, 20.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 705.0, 104.0, 17.0, 18.0 ],
+									"rounded" : 60.0,
+									"text" : "1",
+									"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
+									"textoncolor" : [ 0.780610322952271, 0.870786786079407, 0.912208139896393, 1.0 ],
+									"varname" : "soracle_docu"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -770,7 +1007,9 @@
 									"numinlets" : 0,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 818.0, 132.0, 336.0, 410.0 ],
+									"patching_rect" : [ 708.0, 148.0, 336.0, 410.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 705.0, 169.0, 336.0, 410.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -781,9 +1020,9 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 151.0, 497.0, 45.0, 45.0 ],
+									"patching_rect" : [ 79.0, 78.0, 45.0, 45.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 119.0, 387.0, 45.0, 45.0 ]
+									"presentation_rect" : [ 59.0, 308.0, 45.0, 45.0 ]
 								}
 
 							}
@@ -803,9 +1042,9 @@
 									"numoutlets" : 4,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "", "int", "", "" ],
-									"patching_rect" : [ 453.0, 122.0, 246.0, 487.0 ],
+									"patching_rect" : [ 164.0, 148.0, 246.0, 487.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 556.0, 130.0, 249.0, 488.0 ],
+									"presentation_rect" : [ 172.5, 144.0, 249.0, 488.0 ],
 									"varname" : "soracle.player.ui",
 									"viewvisibility" : 1
 								}
@@ -845,7 +1084,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 210.0, 113.0, 1159.0, 753.0 ],
+						"rect" : [ 0.0, 26.0, 1217.0, 753.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1053,7 +1292,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1014.0, 916.0, 54.0, 22.0 ],
+									"patching_rect" : [ 1025.0, 944.0, 54.0, 22.0 ],
 									"text" : "Matches"
 								}
 
@@ -1387,7 +1626,7 @@
 									"patching_rect" : [ 1125.0, 293.0, 299.0, 27.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 877.0, 183.0, 244.0, 27.0 ],
-									"text" : "LRS minimum",
+									"text" : "Layer Memory Length",
 									"textcolor" : [ 0.933333333333333, 0.933333333333333, 0.933333333333333, 1.0 ],
 									"varname" : "soracle_docu[11]"
 								}
@@ -1399,15 +1638,15 @@
 									"fontsize" : 12.0,
 									"hidden" : 1,
 									"id" : "obj-152",
-									"linecount" : 5,
+									"linecount" : 22,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1115.5, 360.0, 243.0, 74.0 ],
+									"patching_rect" : [ 1115.5, 360.0, 246.0, 301.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 844.0, 219.0, 278.0, 60.0 ],
-									"text" : "Event candidates must meet a minimum required the suffix length (lrs). to be selected as output. This thresholds ensures that only candidates with sufficient coherence are considered.",
+									"presentation_linecount" : 20,
+									"presentation_rect" : [ 844.0, 219.0, 278.0, 275.0 ],
+									"text" : "Internal Weights:\n\n These layers help balance the factor oracle. Two factor oracles, one based on pitch and the other on chroma, run simultaneously and generate event candidates scored using the suffix length (LRS). This scoring system prioritizes outputs that maintain coherence with the selected feature. The candidates are then weighted using internal weights. If a candidate is proposed by both oracles, their respective weights are combined. The output is then chosen by applying a probability distribution to the candidates.\n\nExternal Weights:\n\nOnce candidates are generated, they can be further filtered based on influence, if enabled. This mechanism prioritizes outputs that match with specific features of the influence.",
 									"textcolor" : [ 0.933333333333333, 0.933333333333333, 0.933333333333333, 1.0 ],
 									"varname" : "soracle_docu[10]"
 								}
@@ -1482,7 +1721,7 @@
 ,
 										"lrs" : 										{
 											"title" : "LRS minimum",
-											"description" : "Event candidates must meet a minimum required the suffix length (lrs). to be selected as output. This thresholds ensures that only candidates with sufficient coherence are considered."
+											"description" : "Event candidates must meet a minimum required the suffix length (LRS). to be selected as output. This thresholds ensures that only candidates with sufficient coherence are considered."
 										}
 ,
 										"cont" : 										{
@@ -1497,7 +1736,17 @@
 ,
 										"Temperature" : 										{
 											"title" : "Temperature",
-											"description" : "The temperature controls the softmax distribution used to select an output from the event candidates. A lower temperature favors higher LRS values, making them more likely to be chosen. A higher temperature results in a more uniform distribution. This can be used to avoid loops or to increase the overall value of Los"
+											"description" : "The temperature controls the softmax distribution used to select an output from the event candidates. A lower temperature favors higher LRS values, making them more likely to be chosen. A higher temperature results in a more uniform distribution. This can be used to avoid loops or to increase the overall value of LRS"
+										}
+,
+										"Taboo" : 										{
+											"title" : "Taboo",
+											"description" : "The taboo serves the same purpose as in Somax. Since the oracle can sometimes generate more loops, this functionality can be even more useful and necessary in Soracle."
+										}
+,
+										"Matches" : 										{
+											"title" : "Matches",
+											"description" : "Displays upcoming jumps. External matches are always fewer in number than internal matches, as they are filtered by influence. The total number of matches (for now) corresponds to the sum of the two types combined, which means that the same match can be counted multiple times. This value is therefore not entirely reliable."
 										}
 
 									}
@@ -4150,42 +4399,42 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Mark_turner_The Belmont.mp3",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/corpus",
+				"bootpath" : "~/Documents/Soracle/max/somax/corpus",
 				"patcherrelativepath" : "./max/somax/corpus",
 				"type" : "Mp3",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OMax.yin+.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/influencers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/influencers",
 				"patcherrelativepath" : "./max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Yin+.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/influencers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/influencers",
 				"patcherrelativepath" : "./max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "abstraction_path.js",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/javascript",
+				"bootpath" : "~/Documents/Soracle/max/somax/javascript",
 				"patcherrelativepath" : "./max/somax/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "audio2chroma.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/influencers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/influencers",
 				"patcherrelativepath" : "./max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bc.autoname.js",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/javascript",
+				"bootpath" : "~/Documents/Soracle/max/somax/javascript",
 				"patcherrelativepath" : "./max/somax/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
@@ -4204,21 +4453,21 @@
 			}
 , 			{
 				"name" : "computeMemoryPitchClass.js",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/javascript",
+				"bootpath" : "~/Documents/Soracle/max/somax/javascript",
 				"patcherrelativepath" : "./max/somax/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fo2.corpusbuilder.core.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/Soracle",
+				"bootpath" : "~/Documents/Soracle/max/somax/Soracle",
 				"patcherrelativepath" : "./max/somax/Soracle",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "heldnotes.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4229,413 +4478,413 @@
 			}
 , 			{
 				"name" : "kslider.compact.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2chroma.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/influencers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/influencers",
 				"patcherrelativepath" : "./max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi2chroma_nofilter.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/influencers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/influencers",
 				"patcherrelativepath" : "./max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midichromaanalysis.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/influencers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/influencers",
 				"patcherrelativepath" : "./max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midipitchanalysis.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/influencers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/influencers",
 				"patcherrelativepath" : "./max/somax/patchers/resources/influencers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "monitor.png",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/media",
+				"bootpath" : "~/Documents/Soracle/max/somax/media",
 				"patcherrelativepath" : "./max/somax/media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "omnimidiflush.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "peakmeter.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/player",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/player",
 				"patcherrelativepath" : "./max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.atom.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/player",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/player",
 				"patcherrelativepath" : "./max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiocorpusbuilder.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinfluencer.app.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinfluencer.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinfluencer.ui.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audioinput.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiomixer.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiooutput.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiorecord.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiorecord.ui.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.audiorenderer.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.await_patcherargs.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.beatphase.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.beattracker.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.corpusbuilder.core.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.corpuspath.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.filter_midichannels.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.interpreter.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midicorpusbuilder.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midiinfluencer.app.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midiinfluencer.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midiinfluencer.ui.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midiinput.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midimixer.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midioutput.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.midirenderer.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.multistatebutton.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.pan2.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.path.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.routerblock.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/player",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/player",
 				"patcherrelativepath" : "./max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.player.routing.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/player",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/player",
 				"patcherrelativepath" : "./max/somax/patchers/resources/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.print.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.receiveblock.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.regions.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.relativepath.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.routesignal.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.server.app.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.server.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.serverstatus.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/server",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/server",
 				"patcherrelativepath" : "./max/somax/patchers/resources/server",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.serverstatus.ui.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/server",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/server",
 				"patcherrelativepath" : "./max/somax/patchers/resources/server",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.source.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers",
 				"patcherrelativepath" : "./max/somax/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.uniquename.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.uniquenumber.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somax.winresize.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soracle.audiocorpusbuilder.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/Soracle",
+				"bootpath" : "~/Documents/Soracle/max/somax/Soracle",
 				"patcherrelativepath" : "./max/somax/Soracle",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soracle.corpusview.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/Soracle",
+				"bootpath" : "~/Documents/Soracle/max/somax/Soracle",
 				"patcherrelativepath" : "./max/somax/Soracle",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soracle.player.app.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/Soracle",
+				"bootpath" : "~/Documents/Soracle/max/somax/Soracle",
 				"patcherrelativepath" : "./max/somax/Soracle",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soracle.player.core.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/Soracle",
+				"bootpath" : "~/Documents/Soracle/max/somax/Soracle",
 				"patcherrelativepath" : "./max/somax/Soracle",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soracle.player.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/Soracle",
+				"bootpath" : "~/Documents/Soracle/max/somax/Soracle",
 				"patcherrelativepath" : "./max/somax/Soracle",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "soracle.player.ui.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/Soracle",
+				"bootpath" : "~/Documents/Soracle/max/somax/Soracle",
 				"patcherrelativepath" : "./max/somax/Soracle",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sr.maxpat",
-				"bootpath" : "~/Documents/Somax2-2.6.1 copie/max/somax/patchers/resources/misc",
+				"bootpath" : "~/Documents/Soracle/max/somax/patchers/resources/misc",
 				"patcherrelativepath" : "./max/somax/patchers/resources/misc",
 				"type" : "JSON",
 				"implicit" : 1
