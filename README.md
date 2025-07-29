@@ -8,7 +8,7 @@ Soracle is a parallelized extension of [somax2](https://github.com/DYCI2/Somax2)
 
 * macOS 10.13 or later / Windows 10+
 * Max 8.5 or later
-*  Python > 3.9 and < 3.12 
+*  Python > 3.9, < 3.12 
 
 
 
