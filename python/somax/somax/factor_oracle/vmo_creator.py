@@ -2,7 +2,7 @@
 import numpy as np
 import os
 import re
-from PIL import Image, ImageDraw
+#from PIL import Image, ImageDraw
 from collections import deque
 from somax.factor_oracle.candidate import Candidate
 from somax.runtime.corpus import Corpus

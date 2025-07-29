@@ -1,7 +1,7 @@
 
 import numpy as np
 import os
-from PIL import Image, ImageDraw
+#from PIL import Image, ImageDraw
 from typing import Type, Dict
 
 from somax.features.feature import CorpusFeature

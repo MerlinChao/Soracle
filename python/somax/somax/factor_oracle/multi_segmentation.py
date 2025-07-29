@@ -1,6 +1,6 @@
 import librosa
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from typing import Type
 from typing import Dict
 
@@ -53,16 +53,13 @@ def slice_audio_by_feature( y, sr,  frame_size=2048, hop_size=512, threshold=0.1
     peaks, _ = find_peaks(features, height=threshold)
 
     # Log detected peaks (onsets)
-    print(f"Detected onsets (frames) for {feature_type}: {peaks}")
 
     # Convert min_duration from seconds to frames
     
-    print("sr",sr)
-    print("min_duration", min_duration)
+
 
     min_frames = int(min_duration * sr / (1000*hop_size))
     
-    print("min_frames", min_frames)
     # Filtering and backtracking combined in one loop
     filtered_onsets = []
     last_onset = peaks[0]  # Start with the first detected peak

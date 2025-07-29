@@ -25,10 +25,6 @@ class  VMO_classifier():
         
     def label_from_feature(self, feature, value ) -> IntLabel:
         if feature in self.features:
-            #print("VMO_classifier label_from_feature feature",feature)
-            #print("   label:", np.argmin([np.linalg.norm(value - x) for x in self.dict[feature]]))
-            #print("   value:", value)
-            #print("   dict[feature]:", self.dict[feature])
             return np.argmin( [np.linalg.norm(value - x) for x in self.dict[feature]])
     
     def set_dict_of_list(self,dict_of_list):

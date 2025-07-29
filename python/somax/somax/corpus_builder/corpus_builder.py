@@ -182,7 +182,6 @@ class CorpusBuilder:
         return filepaths, content_type
 
     def _parse_content_type(self, filepath: str) -> Optional[Type[Corpus]]:
-        print("parsing content type for", filepath)
         _, extension = os.path.splitext(filepath.split("/")[-1])
         if extension.lower() in self.MIDI_FILE_EXTENSIONS:
             return MidiCorpus
@@ -273,7 +272,6 @@ class CorpusBuilder:
                           f"and {AudioMetadata.num_channels(y)} channels")
         onset_frames: np.ndarray
         duration_frames: np.ndarray
-        print("slicing audio")
         onset_frames, duration_frames, stats = self._slice_audio(audio_signal=y,
                                                                  sr=sr,
                                                                  onset_channels=onset_channels,
@@ -291,12 +289,10 @@ class CorpusBuilder:
 
         foreground_data: np.ndarray = self._parse_channels(y, channels=foreground_channels)
         background_data: np.ndarray = self._parse_channels(y, channels=background_channels)
-        print("performing STFT")
         # TODO: Allow passing of stft parameters (win_length, n_fft, window function, ...)
         stft: Spectrogram = Spectrogram.from_audio(background_data, sample_rate=sr, hop_length=hop_length, **kwargs)
 
         # TODO: Folder support - should not use filepaths[0]
-        print("creating metadata")
         metadata: AudioMetadata = AudioMetadata(filepath=filepaths[0],
                                                 content_type=AbsoluteScheduling(),
                                                 raw_data=y,
@@ -310,18 +306,15 @@ class CorpusBuilder:
 
         self.logger.debug(f"[_build_audio]: ({timer() - start_time:.2f}) computed necessary metadata")
 
-        print("analyzing features")
+
         used_features: List[Type[CorpusFeature]] = []
-        #print(CorpusFeature.all_corpus_features(), "all_corpus_features")
         for _, feature in CorpusFeature.all_corpus_features():  #  Type[CorpusFeature]
-            print("feature", feature)
             try:
-                #print("feature",feature)
                 feature.analyze(events, metadata)
                 used_features.append(feature)
             except FeatureError as e:
                 self.logger.debug(repr(e))
-        print("done analyzing features")
+
 
         self.logger.debug(f"[_build_audio]: ({timer() - start_time:.2f}) completed feature analysis "
                           f"for {len(used_features)} features ({', '.join([f.__name__ for f in used_features])})")
@@ -336,7 +329,6 @@ class CorpusBuilder:
                                             }
 
         # TODO: Folder support - should not use filepaths[0]
-        print("creating corpus")
         corpus: AudioCorpus = AudioCorpus(events=events, name=name, scheduling_mode=metadata.content_type,
                                           feature_types=used_features,
                                           build_parameters=build_parameters, sr=sr, filepath=filepaths[0],
@@ -405,7 +397,6 @@ class CorpusBuilder:
             onset_frames = self._slice_audio_by_onset(y, sr, hop_length=hop_length,
                                                       pick_peak_wait_s=min_interval_s, **kwargs)
 
-            print("onset_frames 1",onset_frames)
 
             onset_frames, frame_durations = self._compute_slice_durations(y, sr, hop_length=hop_length,
                                                                           onsets=onset_frames,
@@ -414,7 +405,6 @@ class CorpusBuilder:
                                                                           off_threshold_db=off_threshold_db,
                                                                           discard_by_mean=discard_by_mean)
 
-            print("onset_frames 2",onset_frames)
         
         elif segmentation_mode == AudioSegmentation.INTERVAL:
             onset_frames, frame_durations = self._slice_audio_by_interval(y, sr, hop_length=hop_length,
@@ -422,10 +412,7 @@ class CorpusBuilder:
                                                                           **kwargs)
         elif segmentation_mode == AudioSegmentation.FEATURE:
 
-            print("kwargs.get('wait_s')",kwargs.get("wait_s"))
             _, _, onset_frames = slice_audio_by_feature(y, sr,2048, hop_length ,kwargs.get("dmax"), kwargs.get("feature"), kwargs.get("wait_s"))
-            
-            print("onset_frames 1",onset_frames)
             
             onset_frames, frame_durations = self._compute_slice_durations(y, sr, hop_length=hop_length,
                                                                           onsets=onset_frames,
@@ -433,7 +420,6 @@ class CorpusBuilder:
                                                                           max_size_s=max_size_s,
                                                                           off_threshold_db=off_threshold_db,
                                                                           discard_by_mean=discard_by_mean)
-            print("onset_frames 2",onset_frames )
 
 
         else:
@@ -508,7 +494,6 @@ class CorpusBuilder:
 
         onset_frames: np.ndarray = librosa.onset.onset_detect(y=y, sr=sr, hop_length=hop_length, backtrack=backtrack,
                                                               normalize=True, **peak_pick_parameters)
-        print("onset_frames",onset_frames)
         return onset_frames
 
     @staticmethod
@@ -534,7 +519,6 @@ class CorpusBuilder:
 
         duration_frames: np.ndarray = librosa.samples_to_frames(duration_samples, hop_length=hop_length)
 
-        print("onset_frames",onset_frames)
         return onset_frames, duration_frames
 
     
@@ -611,7 +595,6 @@ class CorpusBuilder:
 
         for feature, dmax in zip(features_used,Dmax) :
             kwargs = {"feature": feature, "dmax": dmax, "wait_s": 0.5}
-            print("feature" , feature)
             corpuses[feature] , metadatas[feature] = self._build_audio(filepaths, name, foreground_channels, background_channels, onset_channels,
                                                  segmentation_mode, hop_length, estimated_initial_bpm, beat_tightness, **kwargs)
         return corpuses, metadatas

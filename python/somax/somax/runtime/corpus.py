@@ -375,12 +375,12 @@ class AudioCorpus(Corpus):
                 TypeError if pickle mismatch
         """
         # TODO: This should obviously not be named `from_json` as it uses a pickle
-        print("AudioCorpus.from_json filepath", filepath, "volatile", volatile, "new_audio_path", new_audio_path)
+        #print("AudioCorpus.from_json filepath", filepath, "volatile", volatile, "new_audio_path", new_audio_path)
         try:
             with gzip.open(filepath, 'rb') as f:
-                print("AudioCorpus.from_json f", f)
+                #print("AudioCorpus.from_json f", f)
                 corpus: AudioCorpus = CorpusUnpickler(f).load()
-                print("AudioCorpus.from_json corpus", corpus)
+                #print("AudioCorpus.from_json corpus", corpus)
                 if not isinstance(corpus, cls):
                     raise InvalidCorpus("Class of corpus is not valid")
 

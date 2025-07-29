@@ -309,13 +309,13 @@ class Player(Parametric, ContentAware):
         self._force_jump_index = index
 
     def read_corpus(self, corpus: Optional[Corpus]) -> None:
-        print(f"read_corpus: {corpus}")
+        #print(f"read_corpus: {corpus}")
         self._update_transforms()
         self.corpus = corpus
         #FO
-        print("self.vmo_player: ", self.vmo_player)
+       #print("self.vmo_player: ", self.vmo_player)
         if self.vmo_player is not None :
-            print(f"set corpus in vmo_player: ")
+            #print(f"set corpus in vmo_player: ")
             self.vmo_player.set_corpus(corpus) 
         for atom in self.atoms.values():
             atom.read_corpus(corpus)

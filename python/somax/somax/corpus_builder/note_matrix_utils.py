@@ -1,10 +1,10 @@
 import colorsys
 from typing import Optional, List, Tuple, Dict, Any
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib import patches
-from matplotlib.axes import Axes
+#from matplotlib import patches
+#from matplotlib.axes import Axes
 
 from somax.corpus_builder.matrix_keys import MatrixKeys as Keys
 from somax.corpus_builder.midi_parser import MidiParser
@@ -44,7 +44,6 @@ class NoteMatrixUtils:
         # TODO: Implement with proper indexing
         top_note: int = top_note if top_note is not None else int(np.max(note_matrix.notes[Keys.PITCH]))
         bottom_note: int = bottom_note if bottom_note is not None else int(np.min(note_matrix.notes[Keys.PITCH]))
-        print(bottom_note)
         duration_ticks: float = note_matrix.length_ticks()
 
         step_x: float = x_pixels / duration_ticks

@@ -112,8 +112,6 @@ class RuntimeRecordable(Introspective, ABC):
     @classmethod
     def runtime_class_from_string(cls, keyword: str) -> Type['RuntimeRecordable']:
         """ :raises ValueError if a feature matching the keyword doesn't exist """
-        print("cls", cls._classes(somax.features))
-        print("keyword", keyword)
         for feature in cls._classes(somax.features).values():  # type: Type[RuntimeRecordable]
             if issubclass(feature, RuntimeRecordable) and feature.recordable_keyword() == keyword:
                 return feature

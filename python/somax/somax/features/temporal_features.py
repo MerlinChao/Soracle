@@ -60,15 +60,15 @@ class Tempo(RuntimeRecordable, CorpusFeature):
         audio_data: np.ndarray = metadata.foreground_data
         sr: float = metadata.sr
         hop_length: int = metadata.hop_length
-        print("calculating onset_envelope with librosa for tempo estimation")
+        #print("calculating onset_envelope with librosa for tempo estimation")
         onset_envelope: np.ndarray = librosa.onset.onset_strength(y=metadata.foreground_data,
                                                                   sr=metadata.sr, hop_length=hop_length)
-        print("performing beat tracking with librosa")
-        print( " arguments: ",
-               f"sr={sr}, hop_length={hop_length}, start_bpm={metadata.estimated_initial_bpm}, "
-               f"tightness={metadata.beat_tightness}")
-        print("onset_envelope shape:", onset_envelope.shape)
-        print("audio_data shape:", audio_data.shape)
+        #print("performing beat tracking with librosa")
+        #print( " arguments: ",
+        #       f"sr={sr}, hop_length={hop_length}, start_bpm={metadata.estimated_initial_bpm}, "
+        #       f"tightness={metadata.beat_tightness}")
+        #print("onset_envelope shape:", onset_envelope.shape)
+        #print("audio_data shape:", audio_data.shape)
         
         # Check if the onset envelope is empty
         if onset_envelope.size == 0:

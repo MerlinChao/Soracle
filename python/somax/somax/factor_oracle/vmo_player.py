@@ -15,10 +15,10 @@ import json
 
 import typing
 from typing import List, Optional, Type
-from PIL import Image, ImageDraw
+#from PIL import Image, ImageDraw
 
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -48,7 +48,7 @@ from vmo.analysis.analysis import create_selfsim
 #from pyoracle.pyoracle import make_oracle, make_features, calculate_ideal_threshold
 
 import sklearn.preprocessing as pre
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 
 from somax.factor_oracle.candidate import Candidate
@@ -89,9 +89,7 @@ class VMO_Player(Parametric):
         # this don't have any use for now
         self.influence_fo = InfluenceFO()
 
-        print("corpus in vmo_player", corpus)
         self.vmo_creator = VMOCreator(corpus, clustering_method, features_used, vmo_threshold, nb_clusters)
-        print("VMOs created:", self.vmo_creator.VMOs)
 
         # this don't have any use for now
         #self.vmo_designer = VMODesigner(corpus,features_used)
@@ -130,14 +128,14 @@ class VMO_Player(Parametric):
         #print("vmo_player next_jump",self.next_jump.starting_index)
 
         if self.navigator.position_event == self.next_jump.starting_index:
-            print("vmo_player jump to ",self.next_jump.destination_index )
+            #print("vmo_player jump to ",self.next_jump.destination_index )
             event , transform  =  (self.next_jump.event, self.next_jump.transform)
             self.update_after_jump(self.next_jump)
             self.next_jump = None
         else:
             
             next_step  : Candidate = self.navigator.next_step()
-            print("vmo_player next step to ", next_step.destination_index, next_step.segmentation_feature)
+            #print("vmo_player next step to ", next_step.destination_index, next_step.segmentation_feature)
             event, transform  = next_step.event, next_step.transform
             self.update_after_step(next_step)
 
@@ -149,31 +147,27 @@ class VMO_Player(Parametric):
 
         candidates =  self.navigator.get_candidates()
 
-        #print("using influince_handler")
         filtered_candidates = self.influence_handler.manage_candidates(candidates)
 
         
-        print("nb_filtered",len(candidates),len(filtered_candidates))
-        #print("candidates",  [(candidate.destination_index, candidate.lrs, candidate.transform) for candidate in candidates] )
-        #print("filtered_candidates",  [(candidate.destination_index, candidate.score, candidate.transform) for candidate in filtered_candidates]  )
-
+        #print("nb_filtered",len(candidates),len(filtered_candidates))
 
 
         if filtered_candidates == []:
             filtered_candidates = self.navigator.fallback(candidates)
             self.is_matched = False
-            print("vmo_player fallback activated" )
+            #print("vmo_player fallback activated" )
         else:
             self.is_matched = True
 
 
         selected_candidate : Candidate = self.candidate_selector.select_candidate(filtered_candidates)
-        print("selected_candidate",(selected_candidate.starting_index,selected_candidate.destination_index,
-                                     selected_candidate.score, selected_candidate.transform))
-        
-        return selected_candidate 
-    
-    
+        #print("selected_candidate",(selected_candidate.starting_index,selected_candidate.destination_index,
+        #                             selected_candidate.score, selected_candidate.transform))
+
+        return selected_candidate
+
+
     def update_after_jump(self,selected_candidate: Candidate):
         self.current_event = selected_candidate.event
         self.vmo_manager.update_after_jump(selected_candidate)
@@ -339,8 +333,6 @@ class VMO_Player(Parametric):
     def set_classifier(self,path, classifier: AbstractClassifier) -> None:
         "this function should change the corpus for the internal classifier and change the influece handler for the "
         "external classifier"
-        print("set_classifier, vmo_player, path",path)
-        print("vmo_player, set_classifier",classifier)
         # we also need the classifier in the vmo_manager
         if path == "self":
             self.vmo_creator.set_pitch_classifier(classifier)

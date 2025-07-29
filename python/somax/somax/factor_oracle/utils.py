@@ -23,8 +23,6 @@ def save_VMOs( foldername: str,feature_types,  vmos : dict[str, MO],corpus, form
         """
         
         print(f"Saving models in {foldername} as {format}...")
-        print(f"Feature types: {feature_types}")
-        print(f"VMOs: {vmos}")
         for feature_type in feature_types:
 
             vmo = vmos[feature_type]
