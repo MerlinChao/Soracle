@@ -130,18 +130,13 @@ class Navigator(Parametric):
             corpuses_taboo_mask = {feature: self.region_mask.compute_corpus_taboo_mask(self.corpus[feature]) for feature in self.corpus.keys()}
             #print("corpuses_taboo_mask",corpuses_taboo_mask)
             if corpuses_taboo_mask.values() is None:
-                print("corpuses_taboo_mask is None")
                 return candidates_filtered_with_taboo
             else:
                 candidates_filtered_with_region = []
                 for feature in self.corpus.keys():
-                    print("feature",feature)
-                    print("feature of candidates",[candidat.segmentation_feature for candidat in candidates_filtered_with_taboo])
                     candidate_by_feature = [candidat for candidat in candidates_filtered_with_taboo if candidat.segmentation_feature == feature]
-                    print("candidate_by_feature",len(candidate_by_feature))
                     corpus_taboo_mask = corpuses_taboo_mask[feature]
                     candidates_filtered_with_region.extend([candidat for candidat in candidate_by_feature if not corpus_taboo_mask[candidat.destination_index -1]])
-                    print("candidates_filtered_with_taboo",len(candidates_filtered_with_taboo))
                     
 
         else:
