@@ -8,29 +8,14 @@ Soracle is a parallelized extension of [somax2](https://github.com/DYCI2/Somax2)
 
 * macOS 10.13 or later / Windows 10+
 * Max 8.5 or later
-*  (Python 3.9 or later -- only needed for manual installation)
+*  Python 3.9 or later 
 
 
-Installation
-Easy Installation
-
-This is the path recommended for most users, unless you explicitly want to modify the python code.
-
-    Go to Releases and download the latest version of Somax 2 (Somax-v2_x_x.dmg)
-    Copy the extracted Somax2 folder into the Packages folder in your Max folder (by default, this is "~/Documents/Max 8/Packages")
-    You're done! Now, have a look at the Getting Started section below on where to go next
 
 
 
 
 ## Installation
-
-### Easy Installation
-
-This is the path recommended for most users, unless you explicitly want to modify the python code.
-
-* Go to [Releases](https://github.com/DYCI2/Soracle/releases) and download Soracle 
-* Copy the extracted `Soracle` folder  into the `Packages` folder in your Max folder (by default, this is `"~/Documents/Max 8/Packages"`)
 
 
 #### Step 1: Install Soracle
