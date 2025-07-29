@@ -49,6 +49,6 @@ The main Somax application is the patch `soracle_tuto.maxpat`. You can open this
 
 ## Documentation and Resources for Soracle
 
-The document `Soracle User's Guide.pdf` is intended as a starting point to give an 
+The document `Documentation Soracle.pdf` explains the model and how to use soracle.
 
 
