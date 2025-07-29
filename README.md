@@ -12,7 +12,7 @@ Soracle is a parallelized extension of [somax2](https://github.com/DYCI2/Somax2)
 
 
 
-
+Warning Python version: Soracle requires Python ≥3.10 and <3.12. Python 3.13 is not supported due to library incompatibilities (librosa). You can either use a virtual environment with Python 3.11, or configure your system so that python3 points to Python 3.11.
 
 
 ## Installation
